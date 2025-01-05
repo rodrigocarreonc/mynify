@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minify - Acortador de Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Minify</h1>
+            <p>Acorta tus enlaces fácilmente</p>
+        </header>
+        
+        <main>
+            <form id="shortenForm">
+                <input type="url" id="originalUrl" placeholder="Pega tu enlace aquí..." required>
+                <button type="submit">Acortar</button>
+            </form>
+            <div id="result" class="hidden">
+                <p>Tu enlace corto es:</p>
+                <a id="shortUrl" href="#" target="_blank"></a>
+                <button id="copyButton">Copiar</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -17,3 +17,5 @@ use App\Http\Controllers\LinkController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/short', [LinkController::class,'short']);

@@ -17,5 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/short', [LinkController::class,'short']);
 Route::get('/{hash}', [LinkController::class,'redirect']);
