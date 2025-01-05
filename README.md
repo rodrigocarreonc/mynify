@@ -1,6 +1,6 @@
 # Minify
 
-![Minify Logo](https://via.placeholder.com/300x100?text=Minify)
+![Minify Logo](https://github.com/rodrigocarreonc/mynify/blob/main/frontend/icon.webp)
 
 Minify es una aplicación web diseñada para acortar enlaces de manera sencilla y eficiente. Construida con **Laravel** y **Redis**. Minify ofrece una solución rápida y gratuita para gestionar tus URLs largas y complejas.
 
