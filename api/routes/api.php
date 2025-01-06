@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/short', [LinkController::class,'short']);
+Route::get('clicks/{hash}', [LinkController::class,'clicks']);
