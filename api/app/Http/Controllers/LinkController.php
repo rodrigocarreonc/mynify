@@ -27,4 +27,9 @@ class LinkController extends Controller
         $link->increment('clicks');
         return redirect($link->url);
     }
+
+    public function clicks($hash){
+        $link = Link::where('hash', $hash)->firstOrFail();
+        return response()->json(['clicks' => $link->clicks]);
+    }
 }

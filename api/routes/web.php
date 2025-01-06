@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/{hash}', [LinkController::class,'redirect']);
+Route::get('clicks/{hash}', [LinkController::class,'clicks']);
