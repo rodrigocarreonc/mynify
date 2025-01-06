@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minify - Acortador de Links</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.webp">
 </head>
 <body>
     <div class="container">
@@ -11,7 +12,6 @@
             <h1>Minify</h1>
             <p>Acorta tus enlaces fácilmente</p>
         </header>
-        
         <main>
             <form id="shortenForm">
                 <input type="url" id="originalUrl" placeholder="Pega tu enlace aquí..." required>
