@@ -30,6 +30,9 @@ class LinkController extends Controller
 
     public function clicks($hash){
         $link = Link::where('hash', $hash)->firstOrFail();
-        return response()->json(['clicks' => $link->clicks]);
+        return response()->json([
+            'clicks' => $link->clicks,
+            'url' => $link->url,
+        ]);
     }
 }
