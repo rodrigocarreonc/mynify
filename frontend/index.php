@@ -22,6 +22,11 @@
                 <a id="shortUrl" href="#" target="_blank"></a>
                 <button id="copyButton">Copiar</button>
             </div>
+            <p>Ó</p>
+            <div class="view-clicks">
+                <a href="clicks.php" class="verify">Ver Clicks
+                </a>
+            </div>
         </main>
     </div>
     <script>
@@ -52,26 +57,6 @@
             }).catch(err => {
                 console.error('Error al copiar el enlace: ', err);
             });
-        });
-    </script>
-    <script>
-        document.getElementById('shortenForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const url = document.getElementById('originalUrl').value;
-            fetch('shorten.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ url: url })
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('shortUrl').href = `https://myni.rodrigocarreon.com/${data.hash}`;
-                document.getElementById('shortUrl').textContent = `https://myni.rodrigocarreon.com/${data.hash}`;
-                document.getElementById('result').classList.remove('hidden');
-            })
-            .catch(error => console.error('Error:', error));
         });
     </script>
 </body>
